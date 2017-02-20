@@ -12,7 +12,7 @@ def index(request):
 
     # Construct a dictionary to pass to the template engine as its context.
     # Note the key boldmessage is the same as {{ boldmessage }} in the template!
-    project_list = Project.objects.all()
+    project_list = Project.objects.all() ###view all project... no logic used...
     context_dict = {'projects': project_list}
 
     # Return a rendered response to send to the client.
